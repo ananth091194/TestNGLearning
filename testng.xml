@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Mysuite">
     <test name="regression">
+        <parameter name="URL" value="https://www.flipkart.com/">
+
+        </parameter>
+
         <classes>
             <class name="org.testng.MainTest">
                 <methods>
@@ -10,6 +14,9 @@
             </class>
             <class name="org.testng.TrainingTest">
             </class>
+            <class name="com.dataprovider.TrainingDataProvider">
+            </class>
+
         </classes>
     </test>
 </suite>
